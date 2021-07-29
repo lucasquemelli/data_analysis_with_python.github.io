@@ -53,3 +53,5 @@ We can drop missing values along the column "price" as follows:
 
 ![image](https://user-images.githubusercontent.com/81119854/127536203-d90c3f20-be4e-41b9-963a-af88b272cca3.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127536395-fa971d57-1c51-418c-8533-1909672a07d1.png)
+
