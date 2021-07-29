@@ -95,3 +95,27 @@ This shows the statistical summary of all numeric-typed (int, float) columns.
 
 For example, the attribute "symboling" has 201 counts, the mean value of this column is 0.84, the standard deviation is 1.25, the minimum value is -2, 25th percentile is 0, 50th percentile is 1, 75th percentile is 2, and the maximum value is 3.
 
+If we would also like to check all the columns including those that are of type object, we can add an argument include = "all" inside the bracket.
+
+![image](https://user-images.githubusercontent.com/81119854/127540558-a06216ae-1318-4404-9984-e46e94736b24.png)
+
+Now it provides the statistical summary of all the columns, including object-typed attributes.
+We can now see how many unique values there, which one is the top value and the frequency of top value in the object-typed columns.
+
+Some values in the table above show as "NaN". This is because those numbers are not available regarding a particular column type.
+
+![image](https://user-images.githubusercontent.com/81119854/127541489-27126cda-9b97-4ead-bd4d-ba9f439f9866.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127541543-3329ba7a-9afd-4bad-bedf-c471992af717.png)
+
+Another method you can use to check your dataset is:
+
+![image](https://user-images.githubusercontent.com/81119854/127541615-5f3141b5-d437-48b3-82e6-5147bd8e23ef.png)
+
+It provides a concise summary of your DataFrame. This method prints information about a DataFrame including the index dtype and columns, non-null values and memory usage.
+
+![image](https://user-images.githubusercontent.com/81119854/127541805-e2907cc4-faaf-4404-917d-c3a1b51679b3.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127541850-74fd5b30-dcad-4fef-a415-ddd85e5441c4.png)
+![image](https://user-images.githubusercontent.com/81119854/127541911-48f742c6-bb06-45a3-a43d-34e1671a4c24.png)
+
