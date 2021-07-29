@@ -91,3 +91,7 @@ This method will provide various summary statistics, excluding NaN (Not a Number
 
 ![image](https://user-images.githubusercontent.com/81119854/127540018-785e245d-24cc-43c8-b40f-1303609ebeb9.png)
 
+This shows the statistical summary of all numeric-typed (int, float) columns.
+
+For example, the attribute "symboling" has 201 counts, the mean value of this column is 0.84, the standard deviation is 1.25, the minimum value is -2, 25th percentile is 0, 50th percentile is 1, 75th percentile is 2, and the maximum value is 3.
+
