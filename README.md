@@ -77,3 +77,17 @@ Data has a variety of types. The main types stored in Pandas dataframes are obje
 
 ![image](https://user-images.githubusercontent.com/81119854/127539381-f4a7b41f-66ff-4bf8-935e-27919c559303.png)
 
+A series with the data type of each column is returned.
+
+![image](https://user-images.githubusercontent.com/81119854/127539629-b5bd3915-b410-41bf-a80c-b76b3756d5b1.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127539702-3f3a9ded-7636-4f35-9188-4143f2ae0bd9.png)
+
+If we would like to get a statistical summary of each column e.g. count, column mean value, column standard deviation, etc., we use the describe method:
+
+![image](https://user-images.githubusercontent.com/81119854/127539888-85a28af3-de6c-4fe4-aa11-d15b0e77e584.png)
+
+This method will provide various summary statistics, excluding NaN (Not a Number) values.
+
+![image](https://user-images.githubusercontent.com/81119854/127540018-785e245d-24cc-43c8-b40f-1303609ebeb9.png)
+
