@@ -295,3 +295,22 @@ For example, 'bore' and 'stroke' variables are numerical values that describe th
 
 ![image](https://user-images.githubusercontent.com/81119854/127721069-c0ffc8b1-fd2b-4f3e-bfeb-cde20a70f785.png)
 
+Now we have finally obtained the cleaned dataset with no missing values with all data in its proper format.
+
+Data is usually collected from different agencies in different formats. (Data standardization is also a term for a particular type of data normalization where we subtract the mean and divide by the standard deviation.)
+
+Standardization is the process of transforming data into a common format, allowing the researcher to make the meaningful comparison.
+
+In our dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
+
+We will need to apply data transformation to transform mpg into L/100km.
+
+The formula for unit conversion is:
+
+L/100km = 235/mpg
+
+We can do many mathematical operations directly in Pandas.
+
+![image](https://user-images.githubusercontent.com/81119854/127721330-355da922-b999-4961-a936-7c778bd55ab4.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127721449-50fe57e8-a387-47ad-bb44-6cc068ca9aa7.png)
