@@ -166,3 +166,60 @@ The output is a boolean value indicating whether the value that is passed into t
 
 "True" means the value is a missing value while "False" means the value is not a missing value.
 
+Using a for loop in Python, we can quickly figure out the number of missing values in each column. As mentioned above, "True" represents a missing value and "False" means the value is present in the dataset. In the body of the for loop the method ".value_counts()" counts the number of "True" values.
+
+![image](https://user-images.githubusercontent.com/81119854/127717260-d37c7d23-c6af-46fa-86de-dfe5f24b3aff.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127717338-66a07a6c-af45-435f-be32-0a76184c6315.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127717355-a3e724af-505a-4ec5-9d40-909c5da5fcb0.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127717369-15b1d2a4-4c6e-444e-b59e-5855f915e9a9.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127717381-ef04ccfa-cfe4-4f33-b2a5-0b224768fa77.png)
+
+Based on the summary above, each column has 205 rows of data and seven of the columns containing missing data:
+
+"normalized-losses": 41 missing data
+"num-of-doors": 2 missing data
+"bore": 4 missing data
+"stroke" : 4 missing data
+"horsepower": 2 missing data
+"peak-rpm": 2 missing data
+"price": 4 missing data
+
+How to deal with missing data?
+Drop data
+a. Drop the whole row
+b. Drop the whole column
+Replace data
+a. Replace it by mean
+b. Replace it by frequency
+c. Replace it based on other functions
+
+Whole columns should be dropped only if most entries in the column are empty. In our dataset, none of the columns are empty enough to drop entirely. We have some freedom in choosing which method to replace data; however, some methods may seem more reasonable than others. We will apply each method to many different columns:
+
+Replace by mean:
+
+"normalized-losses": 41 missing data, replace them with mean
+"stroke": 4 missing data, replace them with mean
+"bore": 4 missing data, replace them with mean
+"horsepower": 2 missing data, replace them with mean
+"peak-rpm": 2 missing data, replace them with mean
+
+Replace by frequency:
+
+"num-of-doors": 2 missing data, replace them with "four".
+Reason: 84% sedans is four doors. Since four doors is most frequent, it is most likely to occur.
+
+Drop the whole row:
+
+"price": 4 missing data, simply delete the whole row.
+Reason: price is what we want to predict. Any data entry without price data cannot be used for prediction; therefore any row now without price data is not useful to us.
+
+Calculate the mean value for the "normalized-losses" column. 
+
+![image](https://user-images.githubusercontent.com/81119854/127718328-59a77cc8-3d68-4066-bbc2-52823740304a.png)
+
+
+
