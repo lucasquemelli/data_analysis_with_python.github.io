@@ -253,4 +253,12 @@ Replace "NaN" with the mean value in the "peak-rpm" column
 
 ![image](https://user-images.githubusercontent.com/81119854/127719716-11db26d3-4bd4-4d43-85d3-e2c38dd39fbe.png)
 
+To see which values are present in a particular column, we can use the ".value_counts()" method:
+
+![image](https://user-images.githubusercontent.com/81119854/127719911-2a763089-67df-4c03-ba55-1200680a24b5.png)
+
+We can see that four doors are the most common type. We can also use the ".idxmax()" method to calculate the most common type automatically:
+
+![image](https://user-images.githubusercontent.com/81119854/127719953-b38cead4-5b3f-45a7-8a64-5b9149967cc3.png)
+
 
