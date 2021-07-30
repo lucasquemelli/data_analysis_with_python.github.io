@@ -237,3 +237,7 @@ Replace "NaN" with the mean value in the "bore" column
 
 ![image](https://user-images.githubusercontent.com/81119854/127718857-bf07cead-d7cc-4987-a7b0-b0e6d83e6404.png)
 
+Calculate the mean value for the "horsepower" column
+
+![image](https://user-images.githubusercontent.com/81119854/127719501-697fe29f-0dfc-43a7-ab64-66328a5357c9.png)
+
