@@ -315,4 +315,7 @@ We can do many mathematical operations directly in Pandas.
 
 ![image](https://user-images.githubusercontent.com/81119854/127721647-31d5e6e1-23cb-42af-9762-53c335bdfb50.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127721661-f24ded71-24fb-4293-b217-a7d7f4ba518b.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127721755-79ef2d6c-4407-418c-b191-0ea82dbf463f.png)
 
