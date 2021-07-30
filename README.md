@@ -241,3 +241,16 @@ Calculate the mean value for the "horsepower" column
 
 ![image](https://user-images.githubusercontent.com/81119854/127719501-697fe29f-0dfc-43a7-ab64-66328a5357c9.png)
 
+Replace "NaN" with the mean value in the "horsepower" column
+
+![image](https://user-images.githubusercontent.com/81119854/127719603-d12e654d-97c8-408e-8161-d861a68c3d3d.png)
+
+Calculate the mean value for "peak-rpm" column
+
+![image](https://user-images.githubusercontent.com/81119854/127719685-1e4eb551-0d92-4290-9b80-9cc8a317103d.png)
+
+Calculate the mean value for "peak-rpm" column
+
+![image](https://user-images.githubusercontent.com/81119854/127719716-11db26d3-4bd4-4d43-85d3-e2c38dd39fbe.png)
+
+
