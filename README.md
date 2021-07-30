@@ -272,3 +272,26 @@ Finally, let's drop all rows that do not have price data:
 ![image](https://user-images.githubusercontent.com/81119854/127720109-9f7e6eb8-2cee-4c14-b7cc-e4c206f9a147.png)
 
 Now, we have a dataset with no missing values.
+
+The last step in data cleaning is checking and making sure that all data is in the correct format (int, float, text or other).
+
+In Pandas, we use:
+
+.dtype() to check the data type
+
+.astype() to change the data type
+
+![image](https://user-images.githubusercontent.com/81119854/127720871-9cd7dded-80c5-4dbd-a0c5-17ca6f27f702.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127720890-bece9fbf-139f-4932-8a31-e687099bc48f.png)
+
+As we can see above, some columns are not of the correct data type. Numerical variables should have type 'float' or 'int', and variables with strings such as categories should have type 'object'. 
+
+For example, 'bore' and 'stroke' variables are numerical values that describe the engines, so we should expect them to be of the type 'float' or 'int'; however, they are shown as type 'object'. We have to convert data types into a proper format for each column using the "astype()" method.
+
+![image](https://user-images.githubusercontent.com/81119854/127721023-b6b39097-f1b4-45e2-9b93-016d5b1836df.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127721048-4be2da80-d11f-4adb-aa47-546434825677.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127721069-c0ffc8b1-fd2b-4f3e-bfeb-cde20a70f785.png)
+
