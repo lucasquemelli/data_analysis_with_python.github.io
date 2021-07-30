@@ -311,6 +311,8 @@ L/100km = 235/mpg
 
 We can do many mathematical operations directly in Pandas.
 
-![image](https://user-images.githubusercontent.com/81119854/127721330-355da922-b999-4961-a936-7c778bd55ab4.png)
+![image](https://user-images.githubusercontent.com/81119854/127721623-11971ba1-5679-497f-88a7-00feba850648.png)
 
-![image](https://user-images.githubusercontent.com/81119854/127721449-50fe57e8-a387-47ad-bb44-6cc068ca9aa7.png)
+![image](https://user-images.githubusercontent.com/81119854/127721647-31d5e6e1-23cb-42af-9762-53c335bdfb50.png)
+
+
