@@ -261,4 +261,14 @@ We can see that four doors are the most common type. We can also use the ".idxma
 
 ![image](https://user-images.githubusercontent.com/81119854/127719953-b38cead4-5b3f-45a7-8a64-5b9149967cc3.png)
 
+The replacement procedure is very similar to what we have seen previously:
 
+![image](https://user-images.githubusercontent.com/81119854/127720017-cac86526-baf4-468d-835a-02b8a05e094a.png)
+
+Finally, let's drop all rows that do not have price data:
+
+![image](https://user-images.githubusercontent.com/81119854/127720085-0bde2de7-0b1a-42b4-8807-50806d0aa244.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127720109-9f7e6eb8-2cee-4c14-b7cc-e4c206f9a147.png)
+
+Now, we have a dataset with no missing values.
