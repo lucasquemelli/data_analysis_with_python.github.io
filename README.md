@@ -153,3 +153,16 @@ In the car dataset, missing data comes with the question mark "?". We replace "?
 
 ![image](https://user-images.githubusercontent.com/81119854/127716703-c0ac3909-d144-49cc-bfb6-9923d8701311.png)
 
+The missing values are converted by default. We use the following functions to identify these missing values. There are two methods to detect missing data:
+
+.isnull()
+.notnull()
+
+The output is a boolean value indicating whether the value that is passed into the argument is in fact missing data.
+
+![image](https://user-images.githubusercontent.com/81119854/127717001-c23c0430-ee47-420f-8da3-1c1a0c23023f.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127717068-c72ee141-14a7-431d-b5da-2498f71a69e5.png)
+
+"True" means the value is a missing value while "False" means the value is not a missing value.
+
