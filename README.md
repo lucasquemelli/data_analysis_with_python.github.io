@@ -221,5 +221,15 @@ Calculate the mean value for the "normalized-losses" column.
 
 ![image](https://user-images.githubusercontent.com/81119854/127718328-59a77cc8-3d68-4066-bbc2-52823740304a.png)
 
+Replace "NaN" with mean value in "normalized-losses" column
 
+![image](https://user-images.githubusercontent.com/81119854/127718550-6cfdaf4b-1170-4d3c-b82c-97fe24490aa8.png)
+
+Calculate the mean value for the "bore" column
+
+![image](https://user-images.githubusercontent.com/81119854/127718613-91478d8b-81fe-43ed-8519-c426053b93a3.png)
+
+Replace "NaN" with the mean value in the "bore" column
+
+![image](https://user-images.githubusercontent.com/81119854/127718675-46211a1c-3134-4df2-a0dc-8f251487cdda.png)
 
