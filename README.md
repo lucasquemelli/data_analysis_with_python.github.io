@@ -119,3 +119,37 @@ It provides a concise summary of your DataFrame. This method prints information 
 ![image](https://user-images.githubusercontent.com/81119854/127541850-74fd5b30-dcad-4fef-a415-ddd85e5441c4.png)
 ![image](https://user-images.githubusercontent.com/81119854/127541911-48f742c6-bb06-45a3-a43d-34e1671a4c24.png)
 
+# Data wrangling 
+
+Data wrangling is the process of converting data from the initial format to a format that may be better for analysis.
+
+First, we must import pandas. 
+
+![image](https://user-images.githubusercontent.com/81119854/127715871-5580c962-0196-48da-a677-e69f64886158.png)
+
+Let's read the dataset from the URL and adding the related headers.
+
+![image](https://user-images.githubusercontent.com/81119854/127715987-16494df7-ad14-4a8b-843e-1af92e78e694.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127716017-adb1b29d-fc65-4240-864f-d2ec9083ed86.png)
+
+Use the Pandas method read_csv() to load the data from the web address. Set the parameter "names" equal to the Python list "headers".
+
+![image](https://user-images.githubusercontent.com/81119854/127716170-33e5aac4-cf22-4d81-95a5-c9f680fddf43.png)
+
+Use the method head() to display the first five rows of the dataframe.
+
+![image](https://user-images.githubusercontent.com/81119854/127716249-fb85d968-d63f-46c8-a362-b4194375a2bf.png)
+
+As we can see, several question marks appeared in the dataframe; those are missing values which may hinder our further analysis. So, how do we identify all those missing values and deal with them? How to work with missing data?
+
+Steps for working with missing data: (1) Identify missing data; (2) Deal with missing data; (3) Correct data format.
+
+In the car dataset, missing data comes with the question mark "?". We replace "?" with NaN (Not a Number), Python's default missing value marker for reasons of computational speed and convenience. Here we use the function:
+
+.replace(A, B, inplace = True) to replace A by B.
+
+![image](https://user-images.githubusercontent.com/81119854/127716674-fc665b1e-efea-46d4-ab34-c7d97ef0f8d9.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127716703-c0ac3909-d144-49cc-bfb6-9923d8701311.png)
+
