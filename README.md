@@ -358,3 +358,15 @@ Let's plot the histogram of horsepower to see what the distribution of horsepowe
 
 ![image](https://user-images.githubusercontent.com/81119854/127723001-65796a7c-d5e2-470b-b0be-fd05944cfed7.png)
 
+We would like 3 bins of equal size bandwidth so we use numpy's linspace(start_value, end_value, numbers_generated function.
+
+Since we want to include the minimum value of horsepower, we want to set start_value = min(df["horsepower"]).
+
+Since we want to include the maximum value of horsepower, we want to set end_value = max(df["horsepower"]).
+
+Since we are building 3 bins of equal length, there should be 4 dividers, so numbers_generated = 4.
+
+We build a bin array with a minimum value to a maximum value by using the bandwidth calculated above. The values will determine when one bin ends and another begins.
+
+![image](https://user-images.githubusercontent.com/81119854/127723167-892e7de0-5cd9-4eca-8879-ed483451f200.png)
+
