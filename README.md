@@ -386,4 +386,36 @@ Let's plot the distribution of each bin:
 
 ![image](https://user-images.githubusercontent.com/81119854/127723820-111f470b-0495-48ee-8ca9-3c140c73c760.png)
 
+Normally, a histogram is used to visualize the distribution of bins we created above.
+
+![image](https://user-images.githubusercontent.com/81119854/127723848-da7879d6-09d8-44b1-948e-a7d2fa720bc2.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127723850-ff9c6852-eec1-463e-a54c-dd1746b3e8e3.png)
+
+What is an indicator variable?
+An indicator variable (or dummy variable) is a numerical variable used to label categories. They are called 'dummies' because the numbers themselves don't have inherent meaning.
+
+Why we use indicator variables?
+
+We use indicator variables so we can use categorical variables for regression analysis in the later modules.
+
+Example
+We see the column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
+
+We will use pandas' method 'get_dummies' to assign numerical values to different categories of fuel type.
+
+![image](https://user-images.githubusercontent.com/81119854/127723915-0c1837a4-99d9-422a-9772-af1fadb83065.png)
+
+Get the indicator variables and assign it to data frame "dummy_variable_1":
+
+![image](https://user-images.githubusercontent.com/81119854/127723945-6252bdd5-b542-45d2-8e58-730ef261915e.png)
+
+Change the column names for clarity:
+
+![image](https://user-images.githubusercontent.com/81119854/127723974-722f33a7-4b81-446b-866b-1762157bb20d.png)
+
+In the dataframe, column 'fuel-type' has values for 'gas' and 'diesel' as 0s and 1s now.
+
+![image](https://user-images.githubusercontent.com/81119854/127724015-b8ba994d-eed3-4249-8e9f-cb7be9e69ca8.png)
+
 
