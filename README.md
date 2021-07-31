@@ -333,3 +333,9 @@ Approach: replace original value by (original value)/(maximum value)
 
 ![image](https://user-images.githubusercontent.com/81119854/127722625-24b0abee-d95a-4671-9b25-6eb1ff11c116.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127722694-d6ee62e2-aa4d-4491-b6c8-a6c6143faae6.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127722703-20f87f34-a8a9-4165-b8f4-1cdec947451e.png)
+
+Here we can see we've normalized "length", "width" and "height" in the range of [0,1].
+
