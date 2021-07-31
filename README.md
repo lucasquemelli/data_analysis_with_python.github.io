@@ -424,5 +424,7 @@ In the dataframe, column 'fuel-type' has values for 'gas' and 'diesel' as 0s and
 
 ![image](https://user-images.githubusercontent.com/81119854/127724302-b97df526-27ec-48bf-a464-cd526266ffc4.png)
 
+Save the new csv:
+
 ![image](https://user-images.githubusercontent.com/81119854/127724307-de21ebe8-ced5-49a0-a29a-205a4a348363.png)
 
