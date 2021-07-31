@@ -319,3 +319,17 @@ We can do many mathematical operations directly in Pandas.
 
 ![image](https://user-images.githubusercontent.com/81119854/127721755-79ef2d6c-4407-418c-b191-0ea82dbf463f.png)
 
+Why normalization?
+
+Normalization is the process of transforming values of several variables into a similar range. Typical normalizations include scaling the variable so the variable average is 0, scaling the variable so the variance is 1, or scaling the variable so the variable values range from 0 to 1.
+
+Example
+
+To demonstrate normalization, let's say we want to scale the columns "length", "width" and "height".
+
+Target: would like to normalize those variables so their value ranges from 0 to 1
+
+Approach: replace original value by (original value)/(maximum value)
+
+![image](https://user-images.githubusercontent.com/81119854/127722625-24b0abee-d95a-4671-9b25-6eb1ff11c116.png)
+
