@@ -378,3 +378,12 @@ We apply the function "cut" to determine what each value of df['horsepower'] bel
 
 ![image](https://user-images.githubusercontent.com/81119854/127723393-0e14f62b-d096-4b02-8aa5-78e03cfa074a.png)
 
+Let's see the number of vehicles in each bin:
+
+![image](https://user-images.githubusercontent.com/81119854/127723789-a5c5fa47-479b-4d9d-93ff-8c3e552ef03d.png)
+
+Let's plot the distribution of each bin:
+
+![image](https://user-images.githubusercontent.com/81119854/127723820-111f470b-0495-48ee-8ca9-3c140c73c760.png)
+
+
