@@ -352,3 +352,9 @@ Convert data to correct format:
 
 ![image](https://user-images.githubusercontent.com/81119854/127722929-22ba3b12-af24-44b4-aaa8-f7900f8d4480.png)
 
+Let's plot the histogram of horsepower to see what the distribution of horsepower looks like.
+
+![image](https://user-images.githubusercontent.com/81119854/127722986-b2790feb-14c7-465a-a10d-c62d488a3bf6.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127723001-65796a7c-d5e2-470b-b0be-fd05944cfed7.png)
+
