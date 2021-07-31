@@ -339,3 +339,16 @@ Approach: replace original value by (original value)/(maximum value)
 
 Here we can see we've normalized "length", "width" and "height" in the range of [0,1].
 
+Why binning?
+Binning is a process of transforming continuous numerical variables into discrete categorical 'bins' for grouped analysis.
+
+Example:
+
+In our dataset, "horsepower" is a real valued variable ranging from 48 to 288 and it has 57 unique values. What if we only care about the price difference between cars with high horsepower, medium horsepower, and little horsepower (3 types)? Can we rearrange them into three ‘bins' to simplify analysis?
+
+We will use the pandas method 'cut' to segment the 'horsepower' column into 3 bins.
+
+Convert data to correct format:
+
+![image](https://user-images.githubusercontent.com/81119854/127722929-22ba3b12-af24-44b4-aaa8-f7900f8d4480.png)
+
