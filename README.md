@@ -418,4 +418,11 @@ In the dataframe, column 'fuel-type' has values for 'gas' and 'diesel' as 0s and
 
 ![image](https://user-images.githubusercontent.com/81119854/127724015-b8ba994d-eed3-4249-8e9f-cb7be9e69ca8.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127724260-e69d3236-a646-47de-bdef-73b84b16d32b.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127724272-359099ff-4dc9-4fc3-a82a-5d5397189c50.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127724302-b97df526-27ec-48bf-a464-cd526266ffc4.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127724307-de21ebe8-ced5-49a0-a29a-205a4a348363.png)
 
