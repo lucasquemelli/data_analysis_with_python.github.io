@@ -370,3 +370,11 @@ We build a bin array with a minimum value to a maximum value by using the bandwi
 
 ![image](https://user-images.githubusercontent.com/81119854/127723167-892e7de0-5cd9-4eca-8879-ed483451f200.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127723291-a2e2976c-a5c8-413b-90cc-400e1f946c84.png)
+
+We apply the function "cut" to determine what each value of df['horsepower'] belongs to.
+
+![image](https://user-images.githubusercontent.com/81119854/127723387-5e4df349-cc74-4f48-9c43-decce7991531.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127723393-0e14f62b-d096-4b02-8aa5-78e03cfa074a.png)
+
