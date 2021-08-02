@@ -450,4 +450,14 @@ When visualizing individual variables, it is important to first understand what 
 
 By checking the code above, we may see that the type of peak-rpm is float64.
 
+We can calculate the correlation between variables of type "int64" or "float64" using the method "corr".
+
+![image](https://user-images.githubusercontent.com/81119854/127928511-f3048b10-8439-4fc0-9017-fb964a61a863.png)
+
+The diagonal elements are always one.
+
+![image](https://user-images.githubusercontent.com/81119854/127928960-81dcbffe-b5e5-4181-a07a-50de77997c8c.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127929003-dc319126-482c-411a-b83d-9b6e78f9e4b2.png)
+
 
