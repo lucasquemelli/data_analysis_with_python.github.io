@@ -559,4 +559,17 @@ The default setting of "describe" skips variables of type object. We can apply t
 
 ![image](https://user-images.githubusercontent.com/81119854/127934172-63753c05-0834-4e12-89e6-209bb4e57c6e.png)
 
+Value Counts
+Value counts is a good way of understanding how many units of each characteristic/variable we have. We can apply the "value_counts" method on the column "drive-wheels". Don’t forget the method "value_counts" only works on pandas series, not pandas dataframes. As a result, we only include one bracket df['drive-wheels'], not two brackets df[['drive-wheels']].
+
+![image](https://user-images.githubusercontent.com/81119854/127934352-d06ff2db-050e-48a9-9dcc-e9c3665d909c.png)
+
+We can convert the series to a dataframe as follows:
+
+![image](https://user-images.githubusercontent.com/81119854/127934412-bfa7a65a-b39b-4f8e-81ab-518958613add.png)
+
+Let's repeat the above steps but save the results to the dataframe "drive_wheels_counts" and rename the column 'drive-wheels' to 'value_counts'.
+
+![image](https://user-images.githubusercontent.com/81119854/127934497-3a1bf2b4-fe4d-4b4a-a721-9b27090932b1.png)
+
 
