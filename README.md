@@ -580,4 +580,27 @@ We can repeat the above process for the variable 'engine-location'.
 
 After examining the value counts of the engine location, we see that engine location would not be a good predictor variable for the price. This is because we only have three cars with a rear engine and 198 with an engine in the front, so this result is skewed. Thus, we are not able to draw any conclusions about the engine location.
 
+Basics of Grouping
+
+The "groupby" method groups data by different categories. The data is grouped based on one or several variables, and analysis is performed on the individual groups.
+
+For example, let's group by the variable "drive-wheels". We see that there are 3 different categories of drive wheels.
+
+![image](https://user-images.githubusercontent.com/81119854/127936485-2f3a2f3d-c010-4458-9673-5d71f896bde1.png)
+
+If we want to know, on average, which type of drive wheel is most valuable, we can group "drive-wheels" and then average them.
+
+We can select the columns 'drive-wheels', 'body-style' and 'price', then assign it to the variable "df_group_one".
+
+![image](https://user-images.githubusercontent.com/81119854/127936606-5678e8e5-e736-4ca1-8946-6a34c4d021a2.png)
+
+We can then calculate the average price for each of the different categories of data.
+
+![image](https://user-images.githubusercontent.com/81119854/127936713-f8132467-b610-4373-9a19-9f781fee89dd.png)
+
+From our data, it seems rear-wheel drive vehicles are, on average, the most expensive, while 4-wheel and front-wheel are approximately the same in price.
+
+![image](https://user-images.githubusercontent.com/81119854/127936849-c3cb83a0-51d2-4252-928b-28d4b64ea91b.png)
+
+
 
