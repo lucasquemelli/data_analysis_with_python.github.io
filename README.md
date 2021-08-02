@@ -428,3 +428,26 @@ Save the new csv:
 
 ![image](https://user-images.githubusercontent.com/81119854/127724307-de21ebe8-ced5-49a0-a29a-205a4a348363.png)
 
+# Exploratory Data Analysis
+
+Import libraries:
+
+![image](https://user-images.githubusercontent.com/81119854/127927714-35cf8a9d-e10a-42c1-b76b-40508c8495d6.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127927773-427aadc1-8f11-48db-9ff7-aa69bb1b334c.png)
+
+To install Seaborn we use pip, the Python package manager.
+
+![image](https://user-images.githubusercontent.com/81119854/127927831-8574414c-a5d6-4e07-890f-bfb929b97323.png)
+
+Import visualization packages "Matplotlib" and "Seaborn".
+
+When visualizing individual variables, it is important to first understand what type of variable you are dealing with. This will help us find the right visualization method for that variable.
+
+![image](https://user-images.githubusercontent.com/81119854/127927999-8c25b5cc-9b17-47f3-b6a8-531af9173c32.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127928292-f700b76d-d76c-4b3e-a7bd-7088f92b2101.png)
+
+By checking the code above, we may see that the type of peak-rpm is float64.
+
+
