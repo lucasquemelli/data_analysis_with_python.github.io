@@ -508,4 +508,11 @@ We can examine the correlation between 'peak-rpm' and 'price' and see it's appro
 
 ![image](https://user-images.githubusercontent.com/81119854/127932260-00b10fe6-7fb1-4c51-abb7-4abfb91a17d2.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127932348-b396db0c-5b6d-476f-b9bd-d8ae5e3b57d2.png)
+
+It is not expected a good linear correlation between price and stroke due to the correlation coefficient 0.08231.
+
+![image](https://user-images.githubusercontent.com/81119854/127932563-73332e5e-ec24-42a7-b81f-38df26be92d8.png)
+
+
 
