@@ -514,5 +514,27 @@ It is not expected a good linear correlation between price and stroke due to the
 
 ![image](https://user-images.githubusercontent.com/81119854/127932563-73332e5e-ec24-42a7-b81f-38df26be92d8.png)
 
+Categorical Variables
+
+These are variables that describe a 'characteristic' of a data unit, and are selected from a small group of categories. The categorical variables can have the type "object" or "int64". A good way to visualize categorical variables is by using boxplots.
+
+Let's look at the relationship between "body-style" and "price".
+
+![image](https://user-images.githubusercontent.com/81119854/127932657-6b26a315-615e-4bcb-a9de-02aed0f4ebe8.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127932794-53b0aa89-0cda-4642-9c83-4be88c548b9d.png)
+
+We see that the distributions of price between the different body-style categories have a significant overlap, so body-style would not be a good predictor of price. Let's examine engine "engine-location" and "price":
+
+![image](https://user-images.githubusercontent.com/81119854/127932855-029056ce-1668-4aa2-8012-6a79b428bdf6.png)
+
+Here we see that the distribution of price between these two engine-location categories, front and rear, are distinct enough to take engine-location as a potential good predictor of price.
+
+Let's examine "drive-wheels" and "price".
+
+![image](https://user-images.githubusercontent.com/81119854/127932960-66942914-3fd4-42f8-b45b-29ed02e3e600.png)
+
+Here we see that the distribution of price between the different drive-wheels categories differs. As such, drive-wheels could potentially be a predictor of price.
+
 
 
