@@ -460,4 +460,30 @@ The diagonal elements are always one.
 
 ![image](https://user-images.githubusercontent.com/81119854/127929003-dc319126-482c-411a-b83d-9b6e78f9e4b2.png)
 
+Continuous numerical variables are variables that may contain any value within some range. They can be of type "int64" or "float64". A great way to visualize these variables is by using scatterplots with fitted lines.
+
+In order to start understanding the (linear) relationship between an individual variable and the price, we can use "regplot" which plots the scatterplot plus the fitted regression line for the data.
+
+Let's see several examples of different linear relationships:
+
+Positive Linear Relationship
+
+Let's find the scatterplot of "engine-size" and "price".
+
+![image](https://user-images.githubusercontent.com/81119854/127930471-73bb90d0-5f5e-42b1-86e4-e75c6c89152d.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127930497-19dda6c3-8abc-4f94-b9b0-67f18dbe8faa.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127930509-e6f2f53e-33b5-4548-9f23-fb5f8f9ff3c0.png)
+
+As the engine-size goes up, the price goes up: this indicates a positive direct correlation between these two variables. Engine size seems like a pretty good predictor of price since the regression line is almost a perfect diagonal line.
+
+We can examine the correlation between 'engine-size' and 'price' and see that it's approximately 0.87.
+
+![image](https://user-images.githubusercontent.com/81119854/127930615-a206d5c7-51d4-49d9-90ce-902a2ea4ba75.png)
+
+Highway mpg is a potential predictor variable of price. Let's find the scatterplot of "highway-mpg" and "price".
+
+![image](https://user-images.githubusercontent.com/81119854/127930909-620b2c9b-3784-4038-ad26-0fd85fea5c8a.png)
+
 
