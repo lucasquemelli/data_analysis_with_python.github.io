@@ -486,4 +486,10 @@ Highway mpg is a potential predictor variable of price. Let's find the scatterpl
 
 ![image](https://user-images.githubusercontent.com/81119854/127930909-620b2c9b-3784-4038-ad26-0fd85fea5c8a.png)
 
+As highway-mpg goes up, the price goes down: this indicates an inverse/negative relationship between these two variables. Highway mpg could potentially be a predictor of price.
+
+We can examine the correlation between 'highway-mpg' and 'price' and see it's approximately -0.704.
+
+![image](https://user-images.githubusercontent.com/81119854/127931061-ed163ddf-f9b0-45b4-a4c4-901f861b1c37.png)
+
 
