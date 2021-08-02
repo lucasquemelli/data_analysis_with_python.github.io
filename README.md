@@ -492,4 +492,20 @@ We can examine the correlation between 'highway-mpg' and 'price' and see it's ap
 
 ![image](https://user-images.githubusercontent.com/81119854/127931061-ed163ddf-f9b0-45b4-a4c4-901f861b1c37.png)
 
+Weak Linear Relationship
+
+Let's see if "peak-rpm" is a predictor variable of "price".
+
+![image](https://user-images.githubusercontent.com/81119854/127931867-87f38d48-bd83-461c-b1bc-33fc9247ad2e.png)
+
+Peak rpm does not seem like a good predictor of the price at all since the regression line is close to horizontal. Also, the data points are very scattered and far from the fitted line, showing lots of variability. Therefore, it's not a reliable variable.
+
+We can examine the correlation between 'peak-rpm' and 'price' and see it's approximately -0.101616.
+
+![image](https://user-images.githubusercontent.com/81119854/127932064-b9ba6779-dba8-4fc7-b4e8-c4fc0efd5ccc.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127932156-89d37ab9-ab47-4f96-b64b-e3d0343941ad.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127932260-00b10fe6-7fb1-4c51-abb7-4abfb91a17d2.png)
+
 
