@@ -536,5 +536,27 @@ Let's examine "drive-wheels" and "price".
 
 Here we see that the distribution of price between the different drive-wheels categories differs. As such, drive-wheels could potentially be a predictor of price.
 
+Descriptive Statistical Analysis
+
+Let's first take a look at the variables by utilizing a description method.
+
+The describe function automatically computes basic statistics for all continuous variables. Any NaN values are automatically skipped in these statistics.
+
+This will show:
+
+the count of that variable
+the mean
+the standard deviation (std)
+the minimum value
+the IQR (Interquartile Range: 25%, 50% and 75%)
+the maximum value
+
+We can apply the method "describe" as follows:
+
+![image](https://user-images.githubusercontent.com/81119854/127934082-6f43bd70-49f8-4004-8067-c5b3eff674b3.png)
+
+The default setting of "describe" skips variables of type object. We can apply the method "describe" on the variables of type 'object' as follows:
+
+![image](https://user-images.githubusercontent.com/81119854/127934172-63753c05-0834-4e12-89e6-209bb4e57c6e.png)
 
 
