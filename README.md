@@ -572,4 +572,12 @@ Let's repeat the above steps but save the results to the dataframe "drive_wheels
 
 ![image](https://user-images.githubusercontent.com/81119854/127934497-3a1bf2b4-fe4d-4b4a-a721-9b27090932b1.png)
 
+Now let's rename the index to 'drive-wheels':
+
+![image](https://user-images.githubusercontent.com/81119854/127934604-326a1546-b1c8-48fb-8fec-dc9ed698f118.png)
+
+We can repeat the above process for the variable 'engine-location'.
+
+After examining the value counts of the engine location, we see that engine location would not be a good predictor variable for the price. This is because we only have three cars with a rear engine and 198 with an engine in the front, so this result is skewed. Thus, we are not able to draw any conclusions about the engine location.
+
 
