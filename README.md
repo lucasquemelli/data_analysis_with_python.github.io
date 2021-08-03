@@ -852,6 +852,38 @@ Price = 38423.31 - 821.73 x highway-mpg
 
 ![image](https://user-images.githubusercontent.com/81119854/128069178-7f5b3dc1-e0cc-4ad6-93d9-b4d51073a030.png)
 
+![image](https://user-images.githubusercontent.com/81119854/128069305-f7d11f66-9538-4234-b80b-61a61664f41b.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128069338-b0495ed1-ecb4-4c87-94da-27bca4a918a0.png)
+
+2. Model Evaluation Using Visualization
+
+Now that we've developed some models, how do we evaluate our models and choose the best one? One way to do this is by using a visualization.
+
+Import the visualization package, seaborn:
+
+![image](https://user-images.githubusercontent.com/81119854/128069430-a3dd9b57-2973-472d-936a-fa95477bf2f4.png)
+
+When it comes to simple linear regression, an excellent way to visualize the fit of our model is by using regression plots.
+
+This plot will show a combination of a scattered data points (a scatterplot), as well as the fitted linear regression line going through the data. This will give us a reasonable estimate of the relationship between the two variables, the strength of the correlation, as well as the direction (positive or negative correlation).
+
+Let's visualize highway-mpg as potential predictor variable of price:
+
+![image](https://user-images.githubusercontent.com/81119854/128069590-21d9998f-5809-48ea-8648-480d5ad9863e.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128069695-490bd165-7b14-4f33-9082-12c9c645196c.png)
+
+We can see from this plot that price is negatively correlated to highway-mpg since the regression slope is negative.
+
+One thing to keep in mind when looking at a regression plot is to pay attention to how scattered the data points are around the regression line. This will give you a good indication of the variance of the data and whether a linear model would be the best fit or not. If the data is too far off from the line, this linear model might not be the best model for this data.
+
+Let's compare this plot to the regression plot of "peak-rpm".
+
+![image](https://user-images.githubusercontent.com/81119854/128069887-37b0af9b-7d7d-4a37-83a6-40d03a7af568.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128069975-7049b58a-8f87-4d05-82e5-22bad179c038.png)
+
 
 
 
