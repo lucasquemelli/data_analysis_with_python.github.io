@@ -980,6 +980,41 @@ We create a PolynomialFeatures object of degree 2:
 
 ![image](https://user-images.githubusercontent.com/81119854/128073614-e9631c20-3040-4145-a386-256b25bb83be.png)
 
+In the original data, there are 201 samples and 4 features.
+
+![image](https://user-images.githubusercontent.com/81119854/128073792-7fe473d2-ab5d-4a53-b29b-0af1ef7420de.png)
+
+After the transformation, there are 201 samples and 15 features.
+
+![image](https://user-images.githubusercontent.com/81119854/128073855-55b0f390-96da-4a4d-9848-18a87d9efeaf.png)
+
+Pipeline
+
+Data Pipelines simplify the steps of processing the data. We use the module Pipeline to create a pipeline. We also use StandardScaler as a step in our pipeline.
+
+![image](https://user-images.githubusercontent.com/81119854/128073949-946e94a6-d5fa-4cec-9515-df616b097b70.png)
+
+We create the pipeline by creating a list of tuples including the name of the model or estimator and its corresponding constructor.
+
+![image](https://user-images.githubusercontent.com/81119854/128074083-526e7b2f-e269-47db-be25-29825a175a04.png)
+
+We input the list as an argument to the pipeline constructor:
+
+![image](https://user-images.githubusercontent.com/81119854/128074248-ee4cceeb-f06c-45c4-bdb8-b589ccc295e7.png)
+
+First, we convert the data type Z to type float to avoid conversion warnings that may appear as a result of StandardScaler taking float inputs.
+
+Then, we can normalize the data, perform a transform and fit the model simultaneously.
+
+![image](https://user-images.githubusercontent.com/81119854/128074913-6fdc32af-1ca8-4a6c-a432-e38605c74a93.png)
+
+Similarly, we can normalize the data, perform a transform and produce a prediction simultaneously.
+
+![image](https://user-images.githubusercontent.com/81119854/128074994-01bafa75-3506-4a67-920a-27f824334041.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128075113-ce7b3c4b-8eef-414f-9cac-132885154a54.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128075148-6fe04d56-a1d5-4c6a-b724-79257425d274.png)
 
 
 
