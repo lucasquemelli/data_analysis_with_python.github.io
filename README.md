@@ -914,6 +914,72 @@ Why is that? Randomly spread out residuals means that the variance is constant, 
 
 ![image](https://user-images.githubusercontent.com/81119854/128070753-90590571-a45d-43f1-8d51-ab3d15e81df3.png)
 
+What is this plot telling us?
+
+We can see from this residual plot that the residuals are not randomly spread around the x-axis, leading us to believe that maybe a non-linear model is more appropriate for this data.
+
+Multiple Linear Regression
+
+How do we visualize a model for Multiple Linear Regression? This gets a bit more complicated because you can't visualize it with regression or residual plot.
+
+One way to look at the fit of the model is by looking at the distribution plot. We can look at the distribution of the fitted values that result from the model and compare it to the distribution of the actual values.
+
+First, let's make a prediction:
+
+![image](https://user-images.githubusercontent.com/81119854/128071096-d74bed26-23c8-43ed-8c27-89827597bbbf.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128071193-be92b0f7-875f-4f3c-9e9b-16de24cf448b.png)
+
+We can see that the fitted values are reasonably close to the actual values since the two distributions overlap a bit. However, there is definitely some room for improvement.
+
+3. Polynomial Regression and Pipelines
+
+Polynomial regression is a particular case of the general linear regression model or multiple linear regression models.
+
+We get non-linear relationships by squaring or setting higher-order terms of the predictor variables.
+
+There are different orders of polynomial regression:
+
+![image](https://user-images.githubusercontent.com/81119854/128072442-9ea90a44-fe27-4065-88c9-9816d525fc2f.png)
+
+We saw earlier that a linear model did not provide the best fit while using "highway-mpg" as the predictor variable. Let's see if we can try fitting a polynomial model to the data instead.
+
+We will use the following function to plot the data:
+
+![image](https://user-images.githubusercontent.com/81119854/128072633-4af5534e-221d-44ed-a551-f26c44b88b95.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128072681-16502604-e148-43b5-8b7b-80d5d71c9e59.png)
+
+Let's fit the polynomial using the function polyfit, then use the function poly1d to display the polynomial function.
+
+![image](https://user-images.githubusercontent.com/81119854/128072760-44eae5ec-13c0-4d73-85f0-82044623de68.png)
+
+Let's plot the function:
+
+![image](https://user-images.githubusercontent.com/81119854/128072905-2dae6a97-c276-4ce9-9d95-24383708cfda.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128072967-0b8dcf04-9c72-4140-b512-f699af078675.png)
+
+We can already see from plotting that this polynomial model performs better than the linear model. This is because the generated polynomial function "hits" more of the data points.
+
+![image](https://user-images.githubusercontent.com/81119854/128073068-fab28f6d-b3fb-4da1-b8ce-a78150df02fb.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128073272-098a189f-038d-48de-be57-881909ae53ef.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128073332-13b40c44-220b-4341-a1ef-f8d109b58f7b.png)
+
+The analytical expression for Multivariate Polynomial function gets complicated. For example, the expression for a second-order (degree=2) polynomial with two variables is given by:
+
+![image](https://user-images.githubusercontent.com/81119854/128073441-227c7ed3-e06e-4620-98b3-da09ba2f5675.png)
+
+We can perform a polynomial transform on multiple features. First, we import the module:
+
+We create a PolynomialFeatures object of degree 2:
+
+![image](https://user-images.githubusercontent.com/81119854/128073560-ed29ec4a-a1b1-4bec-9936-8ccdd815e01f.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128073614-e9631c20-3040-4145-a386-256b25bb83be.png)
+
 
 
 
