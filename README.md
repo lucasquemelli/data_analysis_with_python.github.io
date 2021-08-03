@@ -602,5 +602,33 @@ From our data, it seems rear-wheel drive vehicles are, on average, the most expe
 
 ![image](https://user-images.githubusercontent.com/81119854/127936849-c3cb83a0-51d2-4252-928b-28d4b64ea91b.png)
 
+![image](https://user-images.githubusercontent.com/81119854/127936975-1c1d0d79-c2dc-48b2-a984-6e14c1d1984a.png)
+
+This grouped data is much easier to visualize when it is made into a pivot table. A pivot table is like an Excel spreadsheet, with one variable along the column and another along the row. We can convert the dataframe to a pivot table using the method "pivot" to create a pivot table from the groups.
+
+In this case, we will leave the drive-wheels variable as the rows of the table, and pivot body-style to become the columns of the table:
+
+![image](https://user-images.githubusercontent.com/81119854/127937092-f50d84aa-ec71-4ba2-aadd-f98d3c88dd9d.png)
+
+Often, we won't have data for some of the pivot cells. We can fill these missing cells with the value 0, but any other value could potentially be used as well. It should be mentioned that missing data is quite a complex subject and is an entire course on its own.
+
+![image](https://user-images.githubusercontent.com/81119854/127937260-0df8dd45-55c3-4be3-bfc3-81270adc0fe6.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127937357-f8a12141-ba6d-4193-9e7c-d50421c0f8f0.png)
+
+Let's use a heat map to visualize the relationship between Body Style vs Price.
+
+![image](https://user-images.githubusercontent.com/81119854/127937441-21870011-7d9c-442f-9fc3-60bfbe480f62.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127937474-7107096e-e844-403b-b0a3-4dc97a8b601d.png)
+
+The heatmap plots the target variable (price) proportional to colour with respect to the variables 'drive-wheel' and 'body-style' on the vertical and horizontal axis, respectively. This allows us to visualize how the price is related to 'drive-wheel' and 'body-style'.
+
+The default labels convey no useful information to us. Let's change that:
+
+![image](https://user-images.githubusercontent.com/81119854/127937715-003a01ac-606f-4fa3-aa75-5ccdfead0bec.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127937809-9fc2e717-a342-48b3-9453-94989d79354f.png)
+
 
 
