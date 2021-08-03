@@ -1016,6 +1016,50 @@ Similarly, we can normalize the data, perform a transform and produce a predicti
 
 ![image](https://user-images.githubusercontent.com/81119854/128075148-6fe04d56-a1d5-4c6a-b724-79257425d274.png)
 
+4. Measures for In-Sample Evaluation
 
+When evaluating our models, not only do we want to visualize the results, but we also want a quantitative measure to determine how accurate the model is.
 
+Two very important measures that are often used in Statistics to determine the accuracy of a model are:
 
+R^2 / R-squared
+Mean Squared Error (MSE)
+R-squared
+
+R squared, also known as the coefficient of determination, is a measure to indicate how close the data is to the fitted regression line.
+
+The value of the R-squared is the percentage of variation of the response variable (y) that is explained by a linear model.
+
+Mean Squared Error (MSE)
+
+The Mean Squared Error measures the average of the squares of errors. That is, the difference between actual value (y) and the estimated value (ŷ).
+
+Model 1: Simple Linear Regression
+
+Let's calculate the R^2:
+
+![image](https://user-images.githubusercontent.com/81119854/128075602-81f5c6ec-cb30-4c22-92df-7fa1fa496db3.png)
+
+We can say that ~76.097% of the variation of the price is explained by this simple linear model "horsepower_fit".
+
+Let's calculate the MSE:
+
+We can predict the output i.e., "yhat" using the predict method, where X is the input variable:
+
+![image](https://user-images.githubusercontent.com/81119854/128075716-ff37fd64-f996-484f-9c0f-cd54a8a91478.png)
+
+Let's import the function mean_squared_error from the module metrics:
+
+![image](https://user-images.githubusercontent.com/81119854/128075790-76f8e344-83a8-4a38-897d-0acd934825b5.png)
+
+We can compare the predicted results with the actual results:
+
+![image](https://user-images.githubusercontent.com/81119854/128075919-dbdd1275-033d-40c1-ad7a-0f7f0d7b9278.png)
+
+Model 2: Multiple Linear Regression
+
+Let's calculate the R^2:
+
+![image](https://user-images.githubusercontent.com/81119854/128076184-6c2b2077-d5c6-44e3-9e19-4787277da4f4.png)
+
+We can say that ~80.896 % of the variation of price is explained by this multiple linear regression "multi_fit".
