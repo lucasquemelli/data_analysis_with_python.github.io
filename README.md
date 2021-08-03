@@ -884,6 +884,12 @@ Let's compare this plot to the regression plot of "peak-rpm".
 
 ![image](https://user-images.githubusercontent.com/81119854/128069975-7049b58a-8f87-4d05-82e5-22bad179c038.png)
 
+Comparing the regression plot of "peak-rpm" and "highway-mpg", we see that the points for "highway-mpg" are much closer to the generated line and, on average, decrease. The points for "peak-rpm" have more spread around the predicted line and it is much harder to determine if the points are decreasing or increasing as the "highway-mpg" increases.
+
+![image](https://user-images.githubusercontent.com/81119854/128070136-f397b7e2-3c85-4482-948f-714718c593e1.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128070210-cb1b1d59-461b-42b8-bb7c-7f027e1320de.png)
+
 
 
 
