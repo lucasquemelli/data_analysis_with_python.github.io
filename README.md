@@ -848,6 +848,10 @@ Price = 38423.31 - 821.73 x highway-mpg
 
 ![image](https://user-images.githubusercontent.com/81119854/128063293-7897c5b8-e5ab-43c3-a725-c66d3dd86a79.png)
 
+![image](https://user-images.githubusercontent.com/81119854/128069132-e9df01cf-f1a2-4bee-93e3-0d3cc6593438.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128069178-7f5b3dc1-e0cc-4ad6-93d9-b4d51073a030.png)
+
 
 
 
