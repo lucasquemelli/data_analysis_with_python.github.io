@@ -763,6 +763,88 @@ fwd and rwd
 
 ![image](https://user-images.githubusercontent.com/81119854/127939673-0997a405-2c07-4b01-bbcb-8b5a55684970.png)
 
+# Model Development
+
+Import libraries:
+
+![image](https://user-images.githubusercontent.com/81119854/128060605-6c62a39f-c299-4f82-8089-510e80554c8e.png)
+
+Load the data and store it in dataframe df:
+
+![image](https://user-images.githubusercontent.com/81119854/128060790-e8688575-5b79-4018-88cc-350ac5e7ca66.png)
+
+1. Linear Regression and Multiple Linear Regression
+
+Linear Regression
+One example of a Data Model that we will be using is:
+
+Simple Linear Regression
+Simple Linear Regression is a method to help us understand the relationship between two variables:
+
+The predictor/independent variable (X)
+The response/dependent variable (that we want to predict)(Y)
+The result of Linear Regression is a linear function that predicts the response (dependent) variable as a function of the predictor (independent) variable.
+
+Linear Function
+
+![image](https://user-images.githubusercontent.com/81119854/128060994-a15c91b4-bf00-4e0f-9e05-6bdcb82c6c45.png)
+
+a refers to the intercept of the regression line, in other words: the value of Y when X is 0
+b refers to the slope of the regression line, in other words: the value with which Y changes when X increases by 1 unit
+
+Let's load the modules for linear regression:
+
+![image](https://user-images.githubusercontent.com/81119854/128061113-ace34662-955e-47db-95b6-5310f14bd5b4.png)
+
+Create the linear regression object:
+
+![image](https://user-images.githubusercontent.com/81119854/128061240-48ae2963-5295-41dd-8929-98ba30755f9c.png)
+
+How could "highway-mpg" help us predict car price?
+
+For this example, we want to look at how highway-mpg can help us predict car price. Using simple linear regression, we will create a linear function with "highway-mpg" as the predictor variable and the "price" as the response variable.
+
+![image](https://user-images.githubusercontent.com/81119854/128061379-97e5ef14-5a8f-4612-a778-d72739c554be.png)
+
+Fit the linear model using highway-mpg:
+
+![image](https://user-images.githubusercontent.com/81119854/128061438-cf1f1bc7-da24-4f8d-bd33-560a8a666225.png)
+
+We can output a prediction:
+
+![image](https://user-images.githubusercontent.com/81119854/128061552-cb5f0e11-a80e-4f5f-99c0-c4188bc2d4c3.png)
+
+What is the value of the intercept (a)?
+
+![image](https://user-images.githubusercontent.com/81119854/128061656-2bc25fc7-3127-4f8c-ae83-21a2dc5f93c2.png)
+
+What is the value of the slope (b)?
+
+![image](https://user-images.githubusercontent.com/81119854/128061731-31ba643b-b74d-4bae-9436-28373a1f24a7.png)
+
+What is the final estimated linear model we get?
+
+As we saw above, we should get a final linear model with the structure:
+
+![image](https://user-images.githubusercontent.com/81119854/128061816-6a865bcc-9ebf-46c1-b1ec-1fd7cf9accf6.png)
+
+Plugging in the actual values we get:
+
+Price = 38423.31 - 821.73 x highway-mpg
+
+![image](https://user-images.githubusercontent.com/81119854/128062013-90e821a0-57a3-4374-9ef4-ddf5502cb1a8.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128062045-a297fe76-4ea8-489f-af46-5eb5f23ed366.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128062760-4cbf94bd-741c-4b42-a00e-c432aeeb8e04.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128062835-d94b971a-1ff0-4b01-8900-0bc4270efa7e.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128062904-11931095-1035-4caa-a6bc-4e76f31d0c98.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128062934-301a1a17-7355-48ef-8e3f-46d0d0d218f6.png)
+
+
 
 
 
