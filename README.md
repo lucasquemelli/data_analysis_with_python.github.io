@@ -890,6 +890,30 @@ Comparing the regression plot of "peak-rpm" and "highway-mpg", we see that the p
 
 ![image](https://user-images.githubusercontent.com/81119854/128070210-cb1b1d59-461b-42b8-bb7c-7f027e1320de.png)
 
+Residual Plot
+
+A good way to visualize the variance of the data is to use a residual plot.
+
+What is a residual?
+
+The difference between the observed value (y) and the predicted value (Yhat) is called the residual (e). When we look at a regression plot, the residual is the distance from the data point to the fitted regression line.
+
+So what is a residual plot?
+
+A residual plot is a graph that shows the residuals on the vertical y-axis and the independent variable on the horizontal x-axis.
+
+What do we pay attention to when looking at a residual plot?
+
+We look at the spread of the residuals:
+
+- If the points in a residual plot are randomly spread out around the x-axis, then a linear model is appropriate for the data.
+
+Why is that? Randomly spread out residuals means that the variance is constant, and thus the linear model is a good fit for this data.
+
+![image](https://user-images.githubusercontent.com/81119854/128070657-2a012030-f9d1-48a9-97f0-dfcac98a72f2.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128070753-90590571-a45d-43f1-8d51-ab3d15e81df3.png)
+
 
 
 
