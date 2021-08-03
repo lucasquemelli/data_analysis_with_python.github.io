@@ -630,5 +630,139 @@ The default labels convey no useful information to us. Let's change that:
 
 ![image](https://user-images.githubusercontent.com/81119854/127937809-9fc2e717-a342-48b3-9453-94989d79354f.png)
 
+Correlation and Causation
+
+Correlation: a measure of the extent of interdependence between variables.
+
+Causation: the relationship between cause and effect between two variables.
+
+It is important to know the difference between these two. Correlation does not imply causation. Determining correlation is much simpler the determining causation as causation may require independent experimentation.
+
+Pearson Correlation
+
+The Pearson Correlation measures the linear dependence between two variables X and Y.
+
+The resulting coefficient is a value between -1 and 1 inclusive, where:
+
+1: Perfect positive linear correlation.
+0: No linear correlation, the two variables most likely do not affect each other.
+-1: Perfect negative linear correlation.
+
+Pearson Correlation is the default method of the function "corr". Like before, we can calculate the Pearson Correlation of the of the 'int64' or 'float64' variables.
+
+![image](https://user-images.githubusercontent.com/81119854/127938075-002924f8-0214-421c-a495-73e57e403e36.png)
+
+Sometimes we would like to know the significant of the correlation estimate.
+
+P-value
+
+What is this P-value? The P-value is the probability value that the correlation between these two variables is statistically significant. Normally, we choose a significance level of 0.05, which means that we are 95% confident that the correlation between the variables is significant.
+
+By convention, when the
+
+p-value is  <  0.001: we say there is strong evidence that the correlation is significant.
+the p-value is  <  0.05: there is moderate evidence that the correlation is significant.
+the p-value is  <  0.1: there is weak evidence that the correlation is significant.
+the p-value is  >  0.1: there is no evidence that the correlation is significant.
+
+We can obtain this information using "stats" module in the "scipy" library.
+
+![image](https://user-images.githubusercontent.com/81119854/127938296-353af83e-a2fd-4e5c-9660-eff09b536daf.png)
+
+Wheel-Base vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'wheel-base' and 'price'.
+
+![image](https://user-images.githubusercontent.com/81119854/127938472-60b47248-45a9-4963-b96d-300cd6e3bd68.png)
+
+Conclusion: Since the p-value is  <  0.001, the correlation between wheel-base and price is statistically significant, although the linear relationship isn't extremely strong (~0.585).
+
+Horsepower vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'horsepower' and 'price'.
+
+![image](https://user-images.githubusercontent.com/81119854/127938569-1295a090-6708-4e91-bde3-dd763533d222.png)
+
+Conclusion: Since the p-value is  <  0.001, the correlation between horsepower and price is statistically significant, and the linear relationship is quite strong (~0.809, close to 1).
+
+Length vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'length' and 'price'.
+
+![image](https://user-images.githubusercontent.com/81119854/127938670-dba167e8-da2f-4150-928b-22c351c6e70c.png)
+
+Conclusion: Since the p-value is  <  0.001, the correlation between length and price is statistically significant, and the linear relationship is moderately strong (~0.691).
+
+Width vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'width' and 'price':
+
+![image](https://user-images.githubusercontent.com/81119854/127938719-04e1ff3d-d2fe-47aa-97a0-c9d5cf945588.png)
+
+Conclusion: Since the p-value is < 0.001, the correlation between width and price is statistically significant, and the linear relationship is quite strong (~0.751).
+
+Curb-Weight vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'curb-weight' and 'price':
+
+![image](https://user-images.githubusercontent.com/81119854/127938866-8f5f131f-08a4-48f7-8ee2-fef19b37df80.png)
+
+Conclusion: Since the p-value is  <  0.001, the correlation between curb-weight and price is statistically significant, and the linear relationship is quite strong (~0.834).
+
+Engine-Size vs. Price
+
+Let's calculate the Pearson Correlation Coefficient and P-value of 'engine-size' and 'price':
+
+![image](https://user-images.githubusercontent.com/81119854/127938927-54b4bd40-2e28-4e5f-996d-0bc2fedb3221.png)
+
+Conclusion: Since the p-value is  <  0.001, the correlation between engine-size and price is statistically significant, and the linear relationship is very strong (~0.872).
+
+ANOVA
+
+ANOVA: Analysis of Variance
+
+The Analysis of Variance (ANOVA) is a statistical method used to test whether there are significant differences between the means of two or more groups. ANOVA returns two parameters:
+
+F-test score: ANOVA assumes the means of all groups are the same, calculates how much the actual means deviate from the assumption, and reports it as the F-test score. A larger score means there is a larger difference between the means.
+
+P-value: P-value tells how statistically significant our calculated score value is.
+
+If our price variable is strongly correlated with the variable we are analyzing, we expect ANOVA to return a sizeable F-test score and a small p-value.
+
+Drive Wheels
+
+Since ANOVA analyzes the difference between different groups of the same variable, the groupby function will come in handy. Because the ANOVA algorithm averages the data automatically, we do not need to take the average before hand.
+
+To see if different types of 'drive-wheels' impact 'price', we group the data.
+
+![image](https://user-images.githubusercontent.com/81119854/127939326-2a17c365-b04b-47bc-9a23-bbd3131a5be9.png)
+
+![image](https://user-images.githubusercontent.com/81119854/127939359-0a5ac805-4b38-414e-a693-fd3c3ca4f00f.png)
+
+We can obtain the values of the method group using the method "get_group".
+
+![image](https://user-images.githubusercontent.com/81119854/127939415-c8b9ddf1-5db4-4564-ace8-2d88498a8ffb.png)
+
+We can use the function 'f_oneway' in the module 'stats' to obtain the F-test score and P-value.
+
+![image](https://user-images.githubusercontent.com/81119854/127939472-937531d5-7f3c-4a98-ae4c-818324633025.png)
+
+This is a great result with a large F-test score showing a strong correlation and a P-value of almost 0 implying almost certain statistical significance. But does this mean all three tested groups are all this highly correlated?
+
+Let's examine them separately.
+
+fwd and rwd
+
+![image](https://user-images.githubusercontent.com/81119854/127939587-57498b69-e3e8-4f9b-8854-3dda320760e0.png)
+
+4wd and rwd
+
+![image](https://user-images.githubusercontent.com/81119854/127939633-e9a4928c-7c16-4732-b0f8-91dcc9ed7893.png)
+
+4wd and fwd
+
+![image](https://user-images.githubusercontent.com/81119854/127939673-0997a405-2c07-4b01-bbcb-8b5a55684970.png)
+
+
 
 
