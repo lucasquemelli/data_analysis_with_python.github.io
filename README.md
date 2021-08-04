@@ -1165,3 +1165,21 @@ R-squared: The R-squared for the MLR is also much larger than for the Polynomial
 
 Comparing these three models, we conclude that the MLR model is the best model to be able to predict price from our dataset. This result makes sense since we have 27 variables in total and we know that more than one of those variables are potential predictors of the final car price.
 
+# Model Evaluation and Refinement
+
+![image](https://user-images.githubusercontent.com/81119854/128233979-6e4d2772-0238-4e9f-b400-6a1b4542e473.png)
+
+First, let's only use numeric data:
+
+![image](https://user-images.githubusercontent.com/81119854/128234438-10956c91-4db3-487c-88a2-dfe3d3be661e.png)
+
+Libraries for plotting:
+
+![image](https://user-images.githubusercontent.com/81119854/128234569-ba57eb58-cd65-4fa7-bead-5efbd3973f33.png)
+
+Functions for Plotting
+
+![image](https://user-images.githubusercontent.com/81119854/128234875-063f9268-e0af-483f-b9e2-2a8827851b11.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128235125-6cacb1b6-1b44-4df7-80ce-08d9509fcb71.png)
+
