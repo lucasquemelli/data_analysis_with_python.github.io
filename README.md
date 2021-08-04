@@ -1255,3 +1255,11 @@ We can use negative squared error as a score by setting the parameter 'scoring' 
 
 ![image](https://user-images.githubusercontent.com/81119854/128240302-195dd2dd-0fe7-434b-b2e1-e4a684db910c.png)
 
+You can also use the function 'cross_val_predict' to predict the output. The function splits up the data into the specified number of folds, with one fold for testing and the other folds are used for training. First, import the function:
+
+![image](https://user-images.githubusercontent.com/81119854/128240565-3118ec3b-bda3-4931-8623-eca42a6e8c02.png)
+
+We input the object, the feature "horsepower", and the target data y_data. The parameter 'cv' determines the number of folds. In this case, it is 4. We can produce an output:
+
+![image](https://user-images.githubusercontent.com/81119854/128240678-a2332de3-b6db-48e2-91db-b0498402a90a.png)
+
