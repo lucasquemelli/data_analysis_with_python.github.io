@@ -1371,3 +1371,29 @@ The following interface allows you to experiment with different polynomial order
 
 ![image](https://user-images.githubusercontent.com/81119854/128247828-b5b527c9-a964-4102-952b-2de1a6fa3858.png)
 
+![image](https://user-images.githubusercontent.com/81119854/128249601-8688c2b5-0c89-4b4b-8c9c-4987923e7b1b.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128249629-1b6705f0-1f9b-4d49-804b-1c6c08a798e4.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128249674-71f7ede9-8719-4b06-90aa-4f37d02889d8.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128249837-5c850d5f-a34f-4f74-98e1-3f0f6221fe79.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128249919-aaead862-10a0-4c11-8ae4-f4d202525f52.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128249946-d3aac193-dc1b-4bde-86cb-ad40abccad24.png)
+
+110 samples and 15 features.
+
+![image](https://user-images.githubusercontent.com/81119854/128250124-ea353fef-1257-47dc-83ca-a0982e1e8fc3.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128250261-70eb8a02-25c9-499b-9710-3c430f2e2809.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128250294-70d8d601-2527-4787-b224-0bedbe8bd0bf.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128250460-adfb09f4-8fd7-4bca-8e83-0b31ced951aa.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128250524-c475a55d-ee84-4f71-9992-2d21baa3404e.png)
+
+The predicted value is higher than actual value for cars where the price $10,000 range and lower than the price cost in the $30,000 to $40,000 range. As such the model is not as accurate in these ranges.
+
