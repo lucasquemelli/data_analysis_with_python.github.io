@@ -1447,5 +1447,42 @@ The blue line represents the R^2 on the validation data. As the value for alpha 
 
 ![image](https://user-images.githubusercontent.com/81119854/128253665-e0c7a0f3-b704-4ed0-b9dd-aca538d63c5a.png)
 
+Part 4: Grid Search
+
+The term alpha is a hyperparameter. Sklearn has the class GridSearchCV to make the process of finding the best hyperparameter simpler.
+
+Let's import GridSearchCV from the module model_selection.
+
+![image](https://user-images.githubusercontent.com/81119854/128255488-3c55e924-da72-4adf-83dc-f22cf258a131.png)
+
+We create a dictionary of parameter values:
+
+![image](https://user-images.githubusercontent.com/81119854/128255544-3ab23678-2c9e-40c8-af67-e78d2d5380af.png)
+
+Create a Ridge regression object:
+
+![image](https://user-images.githubusercontent.com/81119854/128255599-8f50db26-333b-4898-a68d-36c0d82202a8.png)
+
+Create a ridge grid search object:
+
+![image](https://user-images.githubusercontent.com/81119854/128255677-66b9fa6f-b8c7-429d-8028-1e66c7001848.png)
+
+In order to avoid a deprecation warning due to the iid parameter, we set the value of iid to "None".
+
+Fit the model:
+
+![image](https://user-images.githubusercontent.com/81119854/128255769-3901108e-23a3-4789-ae26-0cdbe2189d16.png)
+
+The object finds the best parameter values on the validation data. We can obtain the estimator with the best parameters and assign it to the variable BestRR as follows:
+
+![image](https://user-images.githubusercontent.com/81119854/128255888-eed42438-1301-49e8-b7ea-5c9087d9a360.png)
+
+We now test our model on the test data:
+
+![image](https://user-images.githubusercontent.com/81119854/128255986-ef2af50e-b3fc-4b5a-b8c6-05e448bf602d.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128256007-3bbc997f-b8b8-407b-ac47-1e6f77cb70af.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128256099-4dd22662-05e0-4654-84e2-cdf1193c1c40.png)
 
 
