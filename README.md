@@ -1225,3 +1225,33 @@ We can see the R^2 is much smaller using the test data compared to the training 
 
 ![image](https://user-images.githubusercontent.com/81119854/128238628-3c90c920-54b2-4332-a9f1-20766ee2c03b.png)
 
+![image](https://user-images.githubusercontent.com/81119854/128239106-41f74dc0-46d1-4499-a11f-320506a51c70.png)
+
+Sometimes we do not have sufficient testing data; as a result, we may want to perform cross-validation. 
+
+Cross-Validation Score
+
+Let's import model_selection from the module cross_val_score.
+
+![image](https://user-images.githubusercontent.com/81119854/128239311-029df76a-bd76-4cc4-9745-ac60030c9667.png)
+
+We input the object, the feature ("horsepower"), and the target data (y_data). The parameter 'cv' determines the number of folds. In this case, it is 4.
+
+![image](https://user-images.githubusercontent.com/81119854/128239423-c16dfd51-e075-4942-9622-2dce77474eb6.png)
+
+The default scoring is R^2. Each element in the array has the average R^2 value for the fold:
+
+![image](https://user-images.githubusercontent.com/81119854/128239516-9ef95ada-00a8-4d54-bef3-7b00efb66c88.png)
+
+We can calculate the average and standard deviation of our estimate:
+
+![image](https://user-images.githubusercontent.com/81119854/128239636-6af3dcaf-4f54-442d-a8ce-894c78a03c0f.png)
+
+We can use negative squared error as a score by setting the parameter 'scoring' metric to 'neg_mean_squared_error'.
+
+![image](https://user-images.githubusercontent.com/81119854/128239759-28cf4751-41c3-43df-a54d-aaf5d3f1fc4d.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128239952-e304dfa3-3e61-4a47-962e-bb8d97479f14.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128240302-195dd2dd-0fe7-434b-b2e1-e4a684db910c.png)
+
