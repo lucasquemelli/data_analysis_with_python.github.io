@@ -1397,3 +1397,55 @@ The following interface allows you to experiment with different polynomial order
 
 The predicted value is higher than actual value for cars where the price $10,000 range and lower than the price cost in the $30,000 to $40,000 range. As such the model is not as accurate in these ranges.
 
+Part 3: Ridge Regression
+
+In this section, we will review Ridge Regression and see how the parameter alpha changes the model. Just a note, here our test data will be used as validation data.
+
+Let's perform a degree two polynomial transformation on our data.
+
+![image](https://user-images.githubusercontent.com/81119854/128251988-0d7116aa-195d-4634-b70a-89c1f8c8b833.png)
+
+Let's import Ridge from the module linear models.
+
+![image](https://user-images.githubusercontent.com/81119854/128252171-c2af91e6-77bb-4d30-8e11-4a4cf4f7bda0.png)
+
+Let's create a Ridge regression object, setting the regularization parameter (alpha) to 1.
+
+![image](https://user-images.githubusercontent.com/81119854/128252266-ba85e297-261e-479a-951a-e665b4a22a22.png)
+
+Like regular regression, you can fit the model using the method fit.
+
+![image](https://user-images.githubusercontent.com/81119854/128252360-a4ad04d8-5763-4a94-9254-dd5b80b3f3a3.png)
+
+Similarly, you can obtain a prediction:
+
+![image](https://user-images.githubusercontent.com/81119854/128252436-5aef229f-86f8-44e8-a562-8d28814793dc.png)
+
+Let's compare the first five predicted samples to our test set:
+
+![image](https://user-images.githubusercontent.com/81119854/128252638-3d070adb-0700-4508-9909-5cd229c43d5a.png)
+
+We select the value of alpha that minimizes the test error. To do so, we can use a for loop. We have also created a progress bar to see how many iterations we have completed so far.
+
+![image](https://user-images.githubusercontent.com/81119854/128252923-0d48e54c-d85c-49f5-b20f-0f18d59f9222.png)
+
+We can plot out the value of R^2 for different alphas:
+
+![image](https://user-images.githubusercontent.com/81119854/128253104-a5a76723-7b02-422f-b5fd-978fe897c601.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128253176-5ae5136d-414f-46ae-ae45-ffc4a4704834.png)
+
+Figure 4: The blue line represents the R^2 of the validation data, and the red line represents the R^2 of the training data. The x-axis represents the different values of Alpha.
+
+Here the model is built and tested on the same data, so the training and test data are the same.
+
+The red line in Figure 4 represents the R^2 of the training data. As alpha increases the R^2 decreases. Therefore, as alpha increases, the model performs worse on the training data
+
+The blue line represents the R^2 on the validation data. As the value for alpha increases, the R^2 increases and converges at a point.
+
+![image](https://user-images.githubusercontent.com/81119854/128253647-703a3967-1cdc-4dc3-8c15-64dd1700fd09.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128253665-e0c7a0f3-b704-4ed0-b9dd-aca538d63c5a.png)
+
+
+
