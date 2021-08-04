@@ -1263,3 +1263,111 @@ We input the object, the feature "horsepower", and the target data y_data. The p
 
 ![image](https://user-images.githubusercontent.com/81119854/128240678-a2332de3-b6db-48e2-91db-b0498402a90a.png)
 
+Part 2: Overfitting, Underfitting and Model Selection
+
+It turns out that the test data, sometimes referred to as the "out of sample data", is a much better measure of how well your model performs in the real world. One reason for this is overfitting.
+
+Let's go over some examples. It turns out these differences are more apparent in Multiple Linear Regression and Polynomial Regression so we will explore overfitting in that context.
+
+Let's create Multiple Linear Regression objects and train the model using 'horsepower', 'curb-weight', 'engine-size' and 'highway-mpg' as features.
+
+![image](https://user-images.githubusercontent.com/81119854/128243107-a3482746-3b1b-4f46-b80a-f4c2d3ca3002.png)
+
+Prediction using training data:
+
+![image](https://user-images.githubusercontent.com/81119854/128243204-dbda3371-9983-4630-a08f-8e0d01a27bad.png)
+
+Prediction using test data:
+
+![image](https://user-images.githubusercontent.com/81119854/128243314-a3aba937-04a9-4f99-a968-3f5211ae5340.png)
+
+Let's perform some model evaluation using our training and testing data separately. First, we import the seaborn and matplotlib library for plotting.
+
+![image](https://user-images.githubusercontent.com/81119854/128243396-31fc256e-393b-4606-a832-3c4a3b7952d8.png)
+
+Let's examine the distribution of the predicted values of the training data.
+
+![image](https://user-images.githubusercontent.com/81119854/128243671-a3bc197e-6b7c-4a17-b6dd-27bf40e7ab8f.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128243746-bee2568c-6f95-4fd5-91cd-0de9a6855863.png)
+
+Figure 1: Plot of predicted values using the training data compared to the actual values of the training data.
+
+So far, the model seems to be doing well in learning from the training dataset. But what happens when the model encounters new data from the testing dataset? When the model generates new values from the test data, we see the distribution of the predicted values is much different from the actual target values.
+
+![image](https://user-images.githubusercontent.com/81119854/128244127-7d35fd0d-5d4b-437c-a441-c5044e79206a.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128244175-bcae3521-1880-44be-9690-14b914136a8f.png)
+
+Figure 2: Plot of predicted value using the test data compared to the actual values of the test data.
+
+Comparing Figure 1 and Figure 2, it is evident that the distribution of the test data in Figure 1 is much better at fitting the data. This difference in Figure 2 is apparent in the range of 5000 to 15,000. This is where the shape of the distribution is extremely different.
+
+Let's see if polynomial regression also exhibits a drop in the prediction accuracy when analysing the test dataset.
+
+![image](https://user-images.githubusercontent.com/81119854/128244534-d297cfc5-8877-4cd2-b78d-d1646dc281b0.png)
+
+Overfitting
+
+Overfitting occurs when the model fits the noise, but not the underlying process. Therefore, when testing your model using the test set, your model does not perform as well since it is modelling noise, not the underlying process that generated the relationship. Let's create a degree 5 polynomial model.
+
+Let's use 55 percent of the data for training and the rest for testing:
+
+![image](https://user-images.githubusercontent.com/81119854/128245916-1b5de93a-f601-4ab6-b0f9-304ac8c9c035.png)
+
+We will perform a degree 5 polynomial transformation on the feature 'horsepower'.
+
+![image](https://user-images.githubusercontent.com/81119854/128246025-d991ac9d-467d-41c8-a023-7449dfd5a169.png)
+
+Now, let's create a Linear Regression model "poly" and train it.
+
+![image](https://user-images.githubusercontent.com/81119854/128246257-ccf2c692-0dee-4979-b571-1e5a549e5f6a.png)
+
+We can see the output of our model using the method "predict." We assign the values to "yhat".
+
+![image](https://user-images.githubusercontent.com/81119854/128246351-7984e47f-f64d-4c35-b2c6-d1929ed59b23.png)
+
+Let's take the first five predicted values and compare it to the actual targets.
+
+![image](https://user-images.githubusercontent.com/81119854/128246435-ac0ea062-7764-48e1-afda-aa08716714df.png)
+
+We will use the function "PollyPlot" that we defined at the beginning of the lab to display the training data, testing data, and the predicted function.
+
+![image](https://user-images.githubusercontent.com/81119854/128246631-c97f0e6e-9498-4fab-8733-73d6fe8f281e.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128246694-eb54c501-66e5-4d23-bbf4-618f9c7f9a1b.png)
+
+Figure 3: A polynomial regression model where red dots represent training data, green dots represent test data, and the blue line represents the model prediction.
+
+We see that the estimated function appears to track the data but around 200 horsepower, the function begins to diverge from the data points.
+
+R^2 of the training data:
+
+![image](https://user-images.githubusercontent.com/81119854/128246905-264b2c7d-7136-48aa-92ef-bdfb8f9cba0a.png)
+
+R^2 of the test data:
+
+![image](https://user-images.githubusercontent.com/81119854/128247034-f32e8464-c395-43e4-9528-58d38636ca07.png)
+
+We see the R^2 for the training data is 0.5567 while the R^2 on the test data was -29.87. The lower the R^2, the worse the model. A negative R^2 is a sign of overfitting.
+
+Let's see how the R^2 changes on the test data for different order polynomials and then plot the results:
+
+![image](https://user-images.githubusercontent.com/81119854/128247193-a018bb11-3b20-4f04-b59c-0e84af7b11e7.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128247220-05da71a5-ac02-44a2-a485-bf7903219125.png)
+
+We see the R^2 gradually increases until an order three polynomial is used. Then, the R^2 dramatically decreases at an order four polynomial.
+
+The following function will be used in the next section.
+
+![image](https://user-images.githubusercontent.com/81119854/128247438-67c1f5af-5d34-4128-8c3a-c534a6e9c775.png)
+
+The following interface allows you to experiment with different polynomial orders and different amounts of data.
+
+![image](https://user-images.githubusercontent.com/81119854/128247646-002e8e8a-ae0f-4765-84b0-4c873eecbc2b.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128247783-74b42a8b-c834-4ff0-9269-bf92af7ae9e7.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128247828-b5b527c9-a964-4102-952b-2de1a6fa3858.png)
+
