@@ -1183,3 +1183,45 @@ Functions for Plotting
 
 ![image](https://user-images.githubusercontent.com/81119854/128235125-6cacb1b6-1b44-4df7-80ce-08d9509fcb71.png)
 
+Part 1: Training and Testing
+
+An important step in testing your model is to split your data into training and testing data. We will place the target data price in a separate dataframe y_data:
+
+![image](https://user-images.githubusercontent.com/81119854/128235531-68a54b11-e898-4644-b674-7b23e01a3607.png)
+
+Drop price data in dataframe x_data:
+
+![image](https://user-images.githubusercontent.com/81119854/128235601-7492cab7-2a20-4df1-b100-963c1bbaca8b.png)
+
+Now, we randomly split our data into training and testing data using the function train_test_split.
+
+![image](https://user-images.githubusercontent.com/81119854/128235733-a56c2cef-8a59-4157-8e7b-a5c65b4572c6.png)
+
+The test_size parameter sets the proportion of data that is split into the testing set. In the above, the testing set is 10% of the total dataset.
+
+![image](https://user-images.githubusercontent.com/81119854/128236221-0919d76f-a1e8-427d-a950-a8df5eed6169.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128236279-87940d22-7fec-4231-9000-7f5bbd341334.png)
+
+Let's import LinearRegression from the module linear_model.
+
+![image](https://user-images.githubusercontent.com/81119854/128238186-3ed288c1-d3aa-4449-b8ae-c773ed304483.png)
+
+We create a Linear Regression object:
+
+![image](https://user-images.githubusercontent.com/81119854/128238255-4ae87318-d9cf-438f-b70a-37500582fbf7.png)
+
+We fit the model using the feature "horsepower":
+
+![image](https://user-images.githubusercontent.com/81119854/128238367-bdad5618-f9c8-4aa1-8435-6069e61d5ce1.png)
+
+Let's calculate the R^2 on the test data:
+
+![image](https://user-images.githubusercontent.com/81119854/128238486-255666a3-148f-4edf-8715-dd0ff5245fb6.png)
+
+We can see the R^2 is much smaller using the test data compared to the training data.
+
+![image](https://user-images.githubusercontent.com/81119854/128238557-22c54574-e076-4d9c-9c86-60d210c55cf1.png)
+
+![image](https://user-images.githubusercontent.com/81119854/128238628-3c90c920-54b2-4332-a9f1-20766ee2c03b.png)
+
